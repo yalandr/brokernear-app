@@ -1,12 +1,12 @@
 <template>
     <div class="card best-broker-card">
         <div class="card-header flex center">
-            Best Title
+            {{ cardData.title }}
         </div>
         <div class="card-content">
             <ul class="card-list">
                 <CardListItem 
-                    v-for="cardListItem in cardListItems"
+                    v-for="cardListItem in cardData.listItems"
                     :key="cardListItem.name"
                     :CardListItemData="cardListItem"
                 />
@@ -23,13 +23,11 @@ export default {
     components: { CardListItem },
     props: {
         cardData: {
-            Type: Array
+            Type: Object
         }
     },
     data() {
-        return {
-            cardListItems: []
-        }
+        return {}
     }
 }
 </script>

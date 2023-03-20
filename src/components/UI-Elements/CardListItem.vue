@@ -1,8 +1,8 @@
 <template>
     <li class="card-list-item">
-        <RouterLink :href="CardListItemData.reviewLink" class="broker-link flex center just-between">
+        <RouterLink :to="CardListItemData.reviewLink" class="broker-link flex center just-between">
             <div class="flex center">
-                <div class="circle-number flex center just-center">1</div>
+                <div class="circle-number flex center just-center">{{CardListItemData.number}}</div>
                 <img :src="`src/assets/img/${CardListItemData.imgPath}`" width="48" height="48" :alt="CardListItemData.name" class="broker-logo" loading="lazy">
                 <h4 class="broker-name">{{CardListItemData.name}}</h4>
             </div>

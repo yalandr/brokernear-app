@@ -3,7 +3,7 @@
     import SubscribeSection from '../components/sections/SubscribeSection.vue';
     import FaqSection from '../components/sections/FaqSection.vue';
     import TopBrokersSection from '../components/sections/TopBrokersSection.vue';
-    import BestbrokersSection from '../components/sections/BestbrokersSection.vue';
+    import BestBrokersSection from '../components/sections/BestBrokersSection.vue';
     import IntroSection from '../components/sections/IntroSection.vue';
     import StatsSection from '../components/sections/StatsSection.vue';
     import LatestNewsSection from '../components/sections/LatestNewsSection.vue';
@@ -15,7 +15,7 @@
     <main class="main">
         <HeroSection />
         <TopBrokersSection />
-        <BestbrokersSection />
+        <BestBrokersSection />
         <IntroSection />
         <StatsSection />
         <LatestNewsSection />
