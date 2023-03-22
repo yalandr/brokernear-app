@@ -765,24 +765,24 @@
                 ],
                 faqItems: [
                     {
-                        question: "",
-                        answer: ""
+                        question: "What is a brokerage account?",
+                        answer: "A brokerage account is an investment fund that allows you to purchase and sell numerous tradable instruments like mutual funds, stocks, exchange-traded funds (ETFs), and bonds."
                     },
                     {
-                        question: "",
-                        answer: ""
+                        question: "What are the best brokerage accounts for long term investing in 2023?",
+                        answer: "Our best brokerage accounts for long term investing in 2023 are Naga, Exness, eToro, FxPro, and Capital.com brokerage firms."
                     },
                     {
-                        question: "",
-                        answer: ""
+                        question: "Can I trade on my mobile device with a brokerage account?",
+                        answer: "Yes, many brokerage accounts offer mobile trading apps that allow you to trade from your mobile device and access research tools and real-time quotes."
                     },
                     {
-                        question: "",
-                        answer: ""
+                        question: "How much do I need to open a brokerage account?",
+                        answer: "This varies by brokerage accounts, but many have no minimum deposit to open an account. However, some may require a minimum deposit or minimum investment amount."
                     },
                     {
-                        question: "",
-                        answer: ""
+                        question: "What are the best online brokerage accounts for beginners?",
+                        answer: "We recommend eToro as the best online brokerage accounts for beginners because of its user-friendly platform and social trading features. Naga and Capital.com also offer intuitive interfaces and educational resources for new investors."
                     },
                 ]
             }
