@@ -2,7 +2,9 @@
     <!-- MAIN -->
     <main class="main">
         <HeroSection />
-        <TopBrokersSection />
+        <TopBrokersSection 
+            :topRatedCards="topBrokersList"
+        />
         <BestBrokersSection />
         <IntroSection />
         <StatsSection />
@@ -45,9 +47,9 @@
                             </a>
                         </li>
                         <li class="section-list-item">
-                            <a href="brokers/etoro.html" class="outer-link">
+                            <RouterLink to="brokers/etoro" class="outer-link">
                                 eToro
-                            </a>
+                            </RouterLink>
                         </li>
                         <li class="section-list-item">
                             <a href="javascript:void(0)" class="outer-link">
@@ -95,7 +97,7 @@
                             eToro
                         </h2>
                         <p class="section-text">
-                            <a href="brokers/etoro.html" class="outer-link">eToro</a> is a worthy low-risk stock market broker for trading forex pairs and CFDs. This broker allows cryptocurrency trading and offers copy trading services for users who want to trade alongside professionals on its platform.
+                            <RouterLink to="brokers/etoro" class="outer-link">eToro</RouterLink> is a worthy low-risk stock market broker for trading forex pairs and CFDs. This broker allows cryptocurrency trading and offers copy trading services for users who want to trade alongside professionals on its platform.
                         </p>
                         <p class="section-text">
                             eToro is fully regulated by the Australian Securities and Investment Commission (ASIC) and Financial Conduct Authority (FCA). These regulators help provide safe and secure investment services to its users. The broker is also mobile-compatible for trading on the go.
@@ -186,6 +188,32 @@
         data() {
             return {
                 isHiddenTextShown: false,
+                topBrokersList: [
+                    {
+                        name: "Exness",
+                        text: "Recommended for traders looking for broad market access and a professional trading environment",
+                        imgPath: "brokers/exness.svg",
+                        rating: 4.9,
+                        websiteLink: "https://www.exness.com/",
+                        reviewLink: "brokers/exness"
+                    },
+                    {
+                        name: "FxPro",
+                        text: "Recommended for forex and CFD traders looking for low fees and great deposit/withdrawal service",
+                        imgPath: "brokers/fxpro.svg",
+                        rating: 5.0,
+                        websiteLink: "https://www.fxpro.com/",
+                        reviewLink: "brokers/fxpro"
+                    },
+                    {
+                        name: "PrimeXBT",
+                        text: "Recommended for investors and traders looking for a great trading platform and solid research",
+                        imgPath: "brokers/primexbt.svg",
+                        rating: 4.8,
+                        websiteLink: "https://primexbt.com/",
+                        reviewLink: "brokers/primexbt"
+                    },
+                ],
                 faqItems: [
                     {
                         question: "What is the best online broker near me in 2023?",

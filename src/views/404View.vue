@@ -2,7 +2,9 @@
 <!-- MAIN -->
 <main class="main">
 
-<BreadcrumbsContainer />
+<BreadcrumbsContainer 
+  :breadcrumbsItems="breadcrumbsItems"
+/>
 
 <!-- PAGE 404 -->
 <div class="page-404">
@@ -39,7 +41,22 @@ import SubscribeSection from '../components/sections/SubscribeSection.vue'
 
 export default {
   components: { SubscribeSection, BreadcrumbsContainer },
-
+  data() {
+    return {
+      breadcrumbsItems: [
+        {
+          link: "/",
+          linkClass: "breadcrumbs-item-link",
+          name: "Home"
+        },
+        {
+          link: "/404",
+          linkClass: "breadcrumbs-item-link current",
+          name: "404"
+        },
+      ]
+    }
+  }
 }
 </script>
 
