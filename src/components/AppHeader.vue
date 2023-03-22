@@ -18,9 +18,9 @@
                     <nav class="navigation">
                         <ul class="nav-list flex center">
                             <li class="nav-list-item">
-                                <a href="reviews.html" class="nav-list-item-link">
+                                <RouterLink to="/reviews" class="nav-list-item-link">
                                     Brokers Reviews
-                                </a>
+                                </RouterLink>
                             </li>
                             <li class="nav-list-item dropdown">
                                     Best Brokers 
@@ -54,14 +54,14 @@
                                     </ul>
                                 </li>
                             <li class="nav-list-item">
-                                <a href="about.html" class="nav-list-item-link">
+                                <RouterLink to="/about" class="nav-list-item-link">
                                     About
-                                </a>
+                                </RouterLink>
                             </li>
                             <li class="nav-list-item">
-                                <a href="contact.html" class="nav-list-item-link">
+                                <RouterLink to="/contact" class="nav-list-item-link">
                                     Contacts
-                                </a>
+                                </RouterLink>
                             </li>
                         </ul>
                     </nav>

@@ -15,48 +15,48 @@
                     <div class="footer-links-group">
                         <h4>Main menu</h4>
                         <ul>
-                            <li><a href="reviews.html">Broker Reviews</a></li>
-                            <li><a href="best-brokers.html">Best Brokers</a></li>
+                            <li><RouterLink to="/reviews">Broker Reviews</RouterLink></li>
+                            <li><RouterLink to="/best-brokers">Best Brokers</RouterLink></li>
                             <li><RouterLink to="/about">About</RouterLink></li>
-                            <li><a href="contact.html">Contacts</a></li>
+                            <li><RouterLink to="/contact">Contacts</RouterLink></li>
                         </ul>
                     </div>
                     <div class="footer-links-group">
                         <h4>Top Brokers</h4>
                         <ul>
-                            <li><a href="brokers/exness.html">Exness</a></li>
-                            <li><a href="brokers/capitalcom.html">Capital.com</a></li>
-                            <li><a href="brokers/fxpro.html">FxPro</a></li>
-                            <li><a href="brokers/naga.html">Naga</a></li>
-                            <li><a href="brokers/primexbt.html">PrimeXBT</a></li>
+                            <li><RouterLink to="brokers/exness">Exness</RouterLink></li>
+                            <li><RouterLink to="brokers/capitalcom">Capital.com</RouterLink></li>
+                            <li><RouterLink to="brokers/fxpro">FxPro</RouterLink></li>
+                            <li><RouterLink to="brokers/naga">Naga</RouterLink></li>
+                            <li><RouterLink to="brokers/primexbt">PrimeXBT</RouterLink></li>
                         </ul>
                     </div>
                     <div class="footer-links-group">
                         <h4>Best brokers for</h4>
                         <ul>
-                            <li><a href="best-brokers.html">Best brokers</a></li>
-                            <li><a href="best-crypto-brokers.html">Best crypto brokers</a></li>
-                            <li><a href="best-brokers-for-beginners.html">Best brokers for beginners</a></li>
-                            <li><a href="best-stock-brokers.html">Best stock brokers</a></li>
-                            <li><a href="best-forex-brokers.html">Best forex brokers</a></li>
-                            <li><a href="best-trading-platform.html">Best trading platform</a></li>
+                            <li><RouterLink to="best-brokers">Best brokers</RouterLink></li>
+                            <li><RouterLink to="best-crypto-brokers">Best crypto brokers</RouterLink></li>
+                            <li><RouterLink to="best-brokers-for-beginners">Best brokers for beginners</RouterLink></li>
+                            <li><RouterLink to="best-stock-brokers">Best stock brokers</RouterLink></li>
+                            <li><RouterLink to="best-forex-brokers">Best forex brokers</RouterLink></li>
+                            <li><RouterLink to="best-trading-platform">Best trading platform</RouterLink></li>
                         </ul>
                     </div>
                     <div class="footer-links-group">
                         <h4>Information</h4>
                         <ul>
-                            <li><a href="tech/privacy.html">Privacy Policy</a></li>
-                            <li><a href="tech/terms.html">Terms and conditions</a></li>
-                            <li><a href="team.html">Our Team</a></li>
-                            <li><a href="news.html">News</a></li>
+                            <li><RouterLink to="tech/privacy">Privacy Policy</RouterLink></li>
+                            <li><RouterLink to="tech/terms">Terms and conditions</RouterLink></li>
+                            <li><RouterLink to="team">Our Team</RouterLink></li>
+                            <li><RouterLink to="news">News</RouterLink></li>
                         </ul>
                     </div>
                     <div class="footer-links-group">
                         <h4>Additional</h4>
                         <ul>
-                            <li><a href="tech/sitemap.html">Sitemap</a></li>
-                            <li><a href="faq.html">FAQ</a></li>
-                            <li><a href="careers.html">Careers</a></li>
+                            <li><RouterLink to="tech/sitemap">Sitemap</RouterLink></li>
+                            <li><RouterLink to="faq">FAQ</RouterLink></li>
+                            <li><RouterLink to="careers">Careers</RouterLink></li>
                         </ul>
                     </div>
                 </div>

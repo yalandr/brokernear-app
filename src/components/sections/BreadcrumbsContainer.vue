@@ -2,24 +2,25 @@
 <!-- BREADCRUMBS -->
 <div class="container">
     <ul class="breadcrumbs flex center wrap">
-        <li class="breadcrumbs-item">
-            <RouterLink to="/" class="breadcrumbs-item-link">
-                Home
-            </RouterLink>
-        </li>
-        <img src="../../assets/img/svg/grey-arrow-right.svg" alt="Arrow right" class="arrow-divider-icon" loading="lazy">
-        <li class="breadcrumbs-item">
-            <a href="javascript:void(0)" class="breadcrumbs-item-link current">
-                404
-            </a>
-        </li>
+        <BreadcrumbsItem
+            v-for="item in breadcrumbsItems" 
+            :key="item.link"
+            :breadcrumbItemData="item"
+        />
     </ul>
 </div>
 </template>
 
 <script>
+import BreadcrumbsItem from '../UI-Elements/BreadcrumbsItem.vue'
 export default {
-
+  components: { BreadcrumbsItem },
+  name: "BreadcrumbsContainer",
+  props: {
+    breadcrumbsItems: {
+      Type: Array
+    }
+  }
 }
 </script>
 
@@ -34,12 +35,20 @@ export default {
   line-height: 1.5;
   color: #7E7E7E;
 }
+.breadcrumbs-item-link::after {
+  content: '';
+  display: inline-block;
+  width: 8px;
+  height: 12px;
+  background: url('../../assets/img/svg/grey-arrow-right.svg') no-repeat center / contain;
+  margin: 0 1rem;
+}
 .breadcrumbs-item-link.current {
   color: #222222;
   font-weight: 800;
   cursor: default;
 }
-.arrow-divider-icon {
-  margin: 0 1rem;
+.breadcrumbs-item-link.current::after {
+  display: none;
 }
 </style>

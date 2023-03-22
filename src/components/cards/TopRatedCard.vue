@@ -4,7 +4,7 @@
             <img src="src/assets/img/svg/green-cup.svg" alt="green Cup" class="top-broker-cup-icon" loading="lazy">
             Top rated broker
         </div>
-        <div class="card-content">
+        <div class="card-content flex column">
             <div class="top-broker-main-info flex center">
                 <img :src="`src/assets/img/${cardData.imgPath}`" width="63" height="63" :alt="cardData.name" class="top-broker-logo" loading="lazy">
                 <div class="name-and-rating">

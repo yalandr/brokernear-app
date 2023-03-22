@@ -3,7 +3,7 @@
     <section class="faq-section bg-darker">
         <div class="container">
             <h2 class="section-heading">
-                FAQ
+                Frequently Asked Questions
             </h2>
             <div class="faq-content">
                 <faqItem 
