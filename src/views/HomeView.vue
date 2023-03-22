@@ -1,15 +1,3 @@
-<script setup>
-    import HeroSection from '../components/sections/HeroSection.vue';
-    import SubscribeSection from '../components/sections/SubscribeSection.vue';
-    import FaqSection from '../components/sections/FaqSection.vue';
-    import TopBrokersSection from '../components/sections/TopBrokersSection.vue';
-    import BestBrokersSection from '../components/sections/BestBrokersSection.vue';
-    import IntroSection from '../components/sections/IntroSection.vue';
-    import StatsSection from '../components/sections/StatsSection.vue';
-    import LatestNewsSection from '../components/sections/LatestNewsSection.vue';
-    import PeopleSaySection from '../components/sections/PeopleSaySection.vue';
-</script>
-
 <template>
     <!-- MAIN -->
     <main class="main">
@@ -86,7 +74,7 @@
                     </p>
                 </div>
 
-                <div class="hidden-text-to-show">
+                <div class="hidden-text-to-show" :class="{'shown': isHiddenTextShown}">
                     <div class="vacancy-section">
                         <h2 class="section-heading">
                             Robinhood
@@ -159,12 +147,70 @@
                         </p>
                     </div>
                 </div>
-                <button class="show-more-btn">
-                    Show more
+                <button class="show-more-btn" @click="showMoreText">
+                    Show <span v-if="!isHiddenTextShown">more</span> <span v-else>less</span>
                 </button>
             </div>
         </section>
-        <FaqSection />
+        <FaqSection 
+            :faqItems="faqItems"
+        />
         <SubscribeSection />
     </main>
 </template>
+
+<script>
+    import HeroSection from '../components/sections/HeroSection.vue';
+    import SubscribeSection from '../components/sections/SubscribeSection.vue';
+    import FaqSection from '../components/sections/FaqSection.vue';
+    import TopBrokersSection from '../components/sections/TopBrokersSection.vue';
+    import BestBrokersSection from '../components/sections/BestBrokersSection.vue';
+    import IntroSection from '../components/sections/IntroSection.vue';
+    import StatsSection from '../components/sections/StatsSection.vue';
+    import LatestNewsSection from '../components/sections/LatestNewsSection.vue';
+    import PeopleSaySection from '../components/sections/PeopleSaySection.vue';
+
+    export default {
+        name: "HomeView",
+        components: {
+            HeroSection,
+            SubscribeSection,
+            FaqSection,
+            TopBrokersSection,
+            BestBrokersSection,
+            IntroSection,
+            StatsSection,
+            LatestNewsSection,
+            PeopleSaySection
+        },
+        data() {
+            return {
+                isHiddenTextShown: false,
+                faqItems: [
+                    {
+                        question: "What is the best online broker near me in 2023?",
+                        answer: "The best online brokers you can trade with, regardless of location, are Interactive Brokers, Robinhood, IG, CMC Markets, and eToro. These brokers are reliable and offer top instruments traded across the globe. They are also mobile-compatible, so you can easily trade on the go."
+                    },
+                    {
+                        question: "Are stock market brokers near me safe and legal?",
+                        answer: "Many online brokers today are regulated by top-tier regulatory bodies like the Financial Conduct Authority (FCA), Swiss Financial Market Supervisory Authority (FINMA), Financial Markets Authority (FMA), and Australian Securities Investment (ASIC). These bodies ensure online brokers offer reliable trading services and low-risk investment services. The more regulators a business broker has, the more secure its platform becomes."
+                    },
+                    {
+                        question: "What is the trusted investment broker near me?",
+                        answer: "IG owns dozens of regulatory licenses from top-tier regulators around the world. These licenses ensure IG delivers quality and excellent stock trading services for all global traders. It is also a to-ranked forex broker in 2023."
+                    },
+                    {
+                        question: "Which finance broker near me offers the best spread?",
+                        answer: "CMC Markets and Robinhood hit the sweet spot for global traders who want to trade without incurring additional costs. The former provides industry-leading spreads that are reasonably priced for forex and cryptocurrency. The latter offers excellent stock trading at zero fees."
+                    },
+                ]
+            }
+        },
+        methods: {
+            showMoreText() {
+                this.isHiddenTextShown = !this.isHiddenTextShown;
+            }
+        }
+    }
+</script>
+

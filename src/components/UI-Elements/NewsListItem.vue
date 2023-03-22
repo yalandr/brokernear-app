@@ -1,7 +1,7 @@
 <template>
 <li class="news-list-item">
     <RouterLink :to="NewsListItemData.linkPath" class="news-list-item-link flex center">
-        <img :src="`src/assets/img/${NewsListItemData.imgPath}`" width="68" height="68" alt="News" class="news-list-item-img" loading="lazy">
+        <img :src="`src/assets/img/${NewsListItemData.imgPath}`" :width="NewsListItemData.imgWidth" :height="NewsListItemData.imgHeight" alt="News" class="news-list-item-img" loading="lazy">
         <div class="news-list-item-content">
             <h4 class="news-list-item-title">
                 {{NewsListItemData.title}}
